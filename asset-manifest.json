@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SaikeNO/portfolio/static/css/main.d067bde1.chunk.css",
+    "main.js": "/SaikeNO/portfolio/static/js/main.e4473e7f.chunk.js",
+    "main.js.map": "/SaikeNO/portfolio/static/js/main.e4473e7f.chunk.js.map",
+    "runtime-main.js": "/SaikeNO/portfolio/static/js/runtime-main.8c02b0c1.js",
+    "runtime-main.js.map": "/SaikeNO/portfolio/static/js/runtime-main.8c02b0c1.js.map",
+    "static/js/2.e0107385.chunk.js": "/SaikeNO/portfolio/static/js/2.e0107385.chunk.js",
+    "static/js/2.e0107385.chunk.js.map": "/SaikeNO/portfolio/static/js/2.e0107385.chunk.js.map",
+    "static/js/3.db16d613.chunk.js": "/SaikeNO/portfolio/static/js/3.db16d613.chunk.js",
+    "static/js/3.db16d613.chunk.js.map": "/SaikeNO/portfolio/static/js/3.db16d613.chunk.js.map",
+    "index.html": "/SaikeNO/portfolio/index.html",
+    "static/css/main.d067bde1.chunk.css.map": "/SaikeNO/portfolio/static/css/main.d067bde1.chunk.css.map",
+    "static/js/2.e0107385.chunk.js.LICENSE.txt": "/SaikeNO/portfolio/static/js/2.e0107385.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c02b0c1.js",
+    "static/js/2.e0107385.chunk.js",
+    "static/css/main.d067bde1.chunk.css",
+    "static/js/main.e4473e7f.chunk.js"
+  ]
+}
