@@ -2,30 +2,33 @@ import { NavLink } from "react-router-dom";
 
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
+import { fonts } from "../../styles/fonts";
 
 export const StyledAside = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+  width: 12vw;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
-  z-index: 0;
+  align-items: center;
 `;
 
 export const StyledLink = styled(NavLink)`
   display: block;
-  padding: 0.3em;
-  font-size: 1.3em;
-  color: ${colors.white};
+  padding: 0.2em;
+  font-size: ${fonts.s};
+  color: ${colors.gray};
 `;
 
 export const StyledPageCounter = styled.div`
   position: relative;
-  font-size: 1.1em;
+  font-size: ${fonts.s};
   height: 50px;
+  width: 100px;
   font-weight: bold;
   color: ${colors.orange};
   & span:first-of-type {

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { StyledLink } from "./style";
 import { colors } from "../../styles/colors";
 
-const BurgerNaviItem = ({ name, path, exact, index }) => {
+const BurgerNaviItem = ({ name, path, exact, index, handleToggleClick }) => {
   return (
     <motion.li
       initial={{ y: 50, opacity: 0 }}
@@ -23,6 +23,7 @@ const BurgerNaviItem = ({ name, path, exact, index }) => {
         }}
         to={path}
         exact={exact}
+        onClick={handleToggleClick}
       >
         {name}
       </StyledLink>

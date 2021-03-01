@@ -10,7 +10,7 @@ const dataNav = [
   { name: "contact", path: "/contact" },
 ];
 
-const BurgerNavigation = () => {
+const BurgerNavigation = ({ handleToggleClick }) => {
   const menu = dataNav.map((item, index) => (
     <MenuItem
       key={index}
@@ -18,6 +18,7 @@ const BurgerNavigation = () => {
       path={item.path}
       exact={item.exact}
       index={index + 1}
+      handleToggleClick={handleToggleClick}
     />
   ));
 

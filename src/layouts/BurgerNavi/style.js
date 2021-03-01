@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { colors } from "../../styles/colors";
+import { fonts } from "../../styles/fonts";
 
 export const StyledNav = styled(motion.nav)`
   position: fixed;
@@ -10,6 +11,7 @@ export const StyledNav = styled(motion.nav)`
   height: 100%;
   width: 100%;
   background-color: ${colors.white};
+  z-index: 998;
 `;
 
 export const StyledList = styled.ul`
@@ -19,7 +21,7 @@ export const StyledList = styled.ul`
   align-items: center;
   flex-direction: column;
   height: 100%;
-  font-size: 60px;
+  font-size: ${fonts.xxl};
   text-transform: uppercase;
 `;
 export const StyledLink = styled(motion(NavLink))`

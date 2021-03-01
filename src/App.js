@@ -18,10 +18,11 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Header isOpened={isOpened} handleToggleClick={handleToggleClick} />
-      <header></header>
-      {/* <Page /> */}
+      <Page />
       <AsideNavi />
-      <AnimatePresence>{isOpened && <BurgerNavi />}</AnimatePresence>
+      <AnimatePresence>
+        {isOpened && <BurgerNavi handleToggleClick={handleToggleClick} />}
+      </AnimatePresence>
     </Router>
   );
 }
