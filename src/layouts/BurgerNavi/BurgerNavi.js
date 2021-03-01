@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItem from "./BurgerNaviItem";
 
-import { StyledNav, StyledUl } from "./style";
+import { StyledNav, StyledList } from "./style";
 
 const dataNav = [
   { name: "home", path: "/", exact: true },
@@ -26,10 +26,10 @@ const BurgerNavigation = () => {
       key="burger nav"
       initial={{ x: "-100%" }}
       animate={{ x: 0 }}
-      exit={{ x: "-100%", transition: { delay: 1, duration: 0.5 } }}
+      exit={{ x: "-100%", transition: { delay: 0.8, duration: 0.5 } }}
       transition={{ duration: 0.8 }}
     >
-      <StyledUl>{menu}</StyledUl>
+      <StyledList>{menu}</StyledList>
     </StyledNav>
   );
 };

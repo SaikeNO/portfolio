@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import { colors } from "../../styles/colors";
 
-export const HeaderElement = styled.header`
+export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,25 +15,48 @@ export const HeaderElement = styled.header`
   padding: 0 50px;
   font-size: 16px;
   font-weight: bold;
+  z-index: 999;
 `;
 
-export const ButtonElement = styled.button`
+export const StyledButton = styled.button`
   position: relative;
   width: 40px;
+  ${(props) =>
+    props.isOpened
+      ? "& span:first-of-type {width: 90%;} span:nth-of-type(2) {width: 60%;} span:nth-of-type(3) {width: 30%}"
+      : ""};
   background-color: transparent;
   border: none;
   cursor: pointer;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  &:hover span:first-of-type {
+    width: 90%;
+  }
+  &:hover span:nth-of-type(2) {
+    width: 60%;
+  }
+  &:hover span:nth-of-type(3) {
+    width: 30%;
+  }
+  transition: 0.4s;
 `;
 
 export const LinkElement = styled(NavLink)`
+  font-size: 0.9em;
   color: ${colors.white};
 `;
 
-export const BurgerSpanElement = styled.span`
+export const StyledBurger = styled.span`
   display: block;
   height: 3px;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   background-color: ${colors.orange};
+  transition: 0.4s;
+  &:first-of-type {
+    margin-top: 7px;
+  }
 `;
