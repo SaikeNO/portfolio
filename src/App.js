@@ -20,7 +20,7 @@ function App() {
       <Header isOpened={isOpened} handleToggleClick={handleToggleClick} />
       <Page />
       <AsideNavi />
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter initial={false}>
         {isOpened && <BurgerNavi handleToggleClick={handleToggleClick} />}
       </AnimatePresence>
     </Router>

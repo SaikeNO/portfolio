@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
@@ -17,7 +18,7 @@ export const StyledAside = styled.aside`
   align-items: center;
 `;
 
-export const StyledLink = styled(NavLink)`
+export const StyledLink = styled(motion(NavLink))`
   display: block;
   padding: 0.2em;
   font-size: ${fonts.s};

@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { StyledWrapper } from "../style";
 import {
-  StyledWelcome,
+  StyledWrapper,
+  StyledOrangeButton,
+  StyledBlackButton,
+  StyledLeftSection,
   StyledTitle,
   StyledDescription,
+  StyledRightSection,
+} from "../style";
+import {
   StyledImgWrapper,
-  StyledButton,
   StyledAnimateDiv,
   StyledImg,
   StyledCoverDiv,
@@ -19,7 +23,7 @@ const HomePage = () => {
 
   return (
     <StyledWrapper>
-      <StyledWelcome
+      <StyledLeftSection
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: -50, opacity: 0 }}
@@ -33,40 +37,38 @@ const HomePage = () => {
           and effcient code
         </StyledDescription>
         <div>
-          <StyledButton>
-            <Link to={"/about"}>about me</Link>
-          </StyledButton>
-          <StyledButton>
-            {" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/SaikeNO"
-            >
-              GitHub
-            </a>{" "}
-          </StyledButton>
+          <StyledOrangeButton as={Link} to={"/about"}>
+            about me
+          </StyledOrangeButton>
+          <StyledBlackButton
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/SaikeNO"
+          >
+            GitHub
+          </StyledBlackButton>
         </div>
-      </StyledWelcome>
-      <StyledImgWrapper>
-        <StyledImg src={image} alt="portrait of Mateusz Lengiewicz" />
-        {isAnimated && (
-          <StyledAnimateDiv
-            initial={{ y: "-150%" }}
-            animate={{ y: "150%" }}
-            exit={[{ y: "-100%" }]}
-            transition={{ duration: 1.2, ease: "linear" }}
-            onAnimationComplete={() => setIsAnimated(false)}
-          />
-        )}
-        {isAnimated && (
-          <StyledCoverDiv
-            initial={{ y: "0" }}
-            animate={{ y: "150%" }}
-            transition={{ duration: 0.6, ease: "linear", delay: 0.4 }}
-          />
-        )}
-      </StyledImgWrapper>
+      </StyledLeftSection>
+      <StyledRightSection>
+        <StyledImgWrapper>
+          <StyledImg src={image} alt="portrait of Mateusz Lengiewicz" />
+          {isAnimated && (
+            <StyledAnimateDiv
+              initial={{ y: "-150%" }}
+              animate={{ y: "150%" }}
+              transition={{ duration: 1.2, ease: "linear" }}
+              onAnimationComplete={() => setIsAnimated(false)}
+            />
+          )}
+          {isAnimated && (
+            <StyledCoverDiv
+              initial={{ y: "0" }}
+              animate={{ y: "150%" }}
+              transition={{ duration: 0.6, ease: "linear", delay: 0.4 }}
+            />
+          )}
+        </StyledImgWrapper>
+      </StyledRightSection>
     </StyledWrapper>
   );
 };
