@@ -24,7 +24,6 @@ const BurgerNavigation = ({ handleToggleClick }) => {
 
   return (
     <StyledNav
-      key="burger nav"
       initial={{ x: "-100%" }}
       animate={{ x: 0 }}
       exit={{ x: "-100%", transition: { delay: 0.8, duration: 0.5 } }}

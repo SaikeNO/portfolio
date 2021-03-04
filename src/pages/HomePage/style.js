@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 import { colors } from "../../styles/colors";
-import { fonts } from "../../styles/fonts";
 
 export const StyledImgWrapper = styled.div`
   width: 100%;

@@ -45,6 +45,7 @@ export const StyledOrangeButton = styled.a`
   font-weight: bold;
   padding: 10px 20px;
   transition: 0.4s;
+  cursor: pointer;
   &:hover {
     background-color: #000;
   }
@@ -53,4 +54,6 @@ export const StyledOrangeButton = styled.a`
 export const StyledBlackButton = styled(StyledOrangeButton)`
   background-color: #000;
   border: 2px solid #000;
+  color: ${(props) => props.color};
+  padding: ${(props) => props.padding};
 `;

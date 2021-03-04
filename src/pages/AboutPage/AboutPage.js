@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TechStack from "./TechStack";
 
 import {
@@ -7,6 +8,8 @@ import {
   StyledRightSection,
   StyledTitle,
   StyledDescription,
+  StyledOrangeButton,
+  StyledBlackButton,
 } from "../style";
 
 import { AboutMeTitle, AboutMeDescription } from "./style";
@@ -24,6 +27,17 @@ const AboutPage = () => {
         <StyledDescription>
           A few words about me and my technologies what I use for building Apps{" "}
         </StyledDescription>
+        <div>
+          <StyledOrangeButton as={Link} to={"/works"}>
+            works
+          </StyledOrangeButton>
+          <StyledBlackButton
+            href={"https://www.facebook.com/mateusz.lengiewicz/"}
+            target={"_blank"}
+          >
+            facebook
+          </StyledBlackButton>
+        </div>
       </StyledLeftSection>
       <StyledRightSection>
         <AboutMeTitle
@@ -46,7 +60,6 @@ const AboutPage = () => {
         <AboutMeTitle
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -50, opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
           #Tech Stack

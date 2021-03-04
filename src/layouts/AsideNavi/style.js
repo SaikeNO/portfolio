@@ -20,8 +20,8 @@ export const StyledAside = styled.aside`
 
 export const StyledLink = styled(motion(NavLink))`
   display: block;
-  padding: 0.2em;
-  font-size: ${fonts.s};
+  padding: 0.3em;
+  font-size: ${fonts.m};
   color: ${colors.gray};
   transition: 0.3s;
   &.active {
