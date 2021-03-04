@@ -7,9 +7,11 @@ import { fonts } from "../styles/fonts";
 export const StyledWrapper = styled.main`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5vw;
+  gap: 7vw;
   padding: 100px 12vw 100px 15vw;
   height: 100vh;
+  max-width: 2000px;
+  margin: 0 auto;
 `;
 export const StyledLeftSection = styled(motion.section)`
   display: flex;
@@ -17,7 +19,9 @@ export const StyledLeftSection = styled(motion.section)`
   flex-direction: column;
   min-width: 300px;
 `;
-export const StyledRightSection = styled.section``;
+export const StyledRightSection = styled(StyledLeftSection)`
+  min-width: auto;
+`;
 
 export const StyledTitle = styled.h2`
   font-size: ${fonts.xxl};

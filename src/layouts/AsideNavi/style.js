@@ -23,6 +23,10 @@ export const StyledLink = styled(motion(NavLink))`
   padding: 0.2em;
   font-size: ${fonts.s};
   color: ${colors.gray};
+  transition: 0.3s;
+  &.active {
+    color: ${colors.white};
+  }
 `;
 
 export const StyledPageCounter = styled.div`
