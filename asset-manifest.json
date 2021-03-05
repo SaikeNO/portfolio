@@ -1,25 +1,31 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7d77e4dc.chunk.css",
-    "main.js": "/portfolio/static/js/main.e47ec9ed.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e47ec9ed.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.8d015dbe.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8d015dbe.js.map",
-    "static/js/2.83db58da.chunk.js": "/portfolio/static/js/2.83db58da.chunk.js",
-    "static/js/2.83db58da.chunk.js.map": "/portfolio/static/js/2.83db58da.chunk.js.map",
-    "static/js/3.d6afb48e.chunk.js": "/portfolio/static/js/3.d6afb48e.chunk.js",
-    "static/js/3.d6afb48e.chunk.js.map": "/portfolio/static/js/3.d6afb48e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.541e22df.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.541e22df.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.451e9c38.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.451e9c38.js.map",
+    "static/js/2.8d7cf46f.chunk.js": "/portfolio/static/js/2.8d7cf46f.chunk.js",
+    "static/js/2.8d7cf46f.chunk.js.map": "/portfolio/static/js/2.8d7cf46f.chunk.js.map",
+    "static/js/3.578ee5ce.chunk.js": "/portfolio/static/js/3.578ee5ce.chunk.js",
+    "static/js/3.578ee5ce.chunk.js.map": "/portfolio/static/js/3.578ee5ce.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.7d77e4dc.chunk.css.map": "/portfolio/static/css/main.7d77e4dc.chunk.css.map",
-    "static/js/2.83db58da.chunk.js.LICENSE.txt": "/portfolio/static/js/2.83db58da.chunk.js.LICENSE.txt",
+    "static/js/2.8d7cf46f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8d7cf46f.chunk.js.LICENSE.txt",
+    "static/media/applab1.01e5a989.png": "/portfolio/static/media/applab1.01e5a989.png",
+    "static/media/applab2.b6a13276.png": "/portfolio/static/media/applab2.b6a13276.png",
+    "static/media/applab3.3514168e.png": "/portfolio/static/media/applab3.3514168e.png",
     "static/media/lengiewicz.b01d16c8.jpg": "/portfolio/static/media/lengiewicz.b01d16c8.jpg",
+    "static/media/speedcars1.7a83b2e0.png": "/portfolio/static/media/speedcars1.7a83b2e0.png",
+    "static/media/speedcars2.2c20fec7.png": "/portfolio/static/media/speedcars2.2c20fec7.png",
+    "static/media/speedcars3.694a48c9.png": "/portfolio/static/media/speedcars3.694a48c9.png",
     "static/media/to_do_app1.308590b0.png": "/portfolio/static/media/to_do_app1.308590b0.png",
     "static/media/to_do_app2.7e167ecf.png": "/portfolio/static/media/to_do_app2.7e167ecf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d015dbe.js",
-    "static/js/2.83db58da.chunk.js",
+    "static/js/runtime-main.451e9c38.js",
+    "static/js/2.8d7cf46f.chunk.js",
     "static/css/main.7d77e4dc.chunk.css",
-    "static/js/main.e47ec9ed.chunk.js"
+    "static/js/main.541e22df.chunk.js"
   ]
 }
