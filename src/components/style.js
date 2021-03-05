@@ -4,38 +4,14 @@ import { motion } from "framer-motion";
 import { colors } from "../styles/colors";
 import { fonts } from "../styles/fonts";
 
-export const StyledWrapper = styled(motion.article)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: 100%;
-  padding: 100px 50px;
-  background-color: ${colors.white};
-  z-index: 900;
-  overflow: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-`;
-
-export const HiddenDiv = styled.div`
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 40%;
-  height: 100%;
-`;
-
-export const ProjectTitle = styled.h2`
+export const ProjectTitle = styled(motion.h2)`
   font-size: ${fonts.xxl};
   color: ${colors.black};
 `;
 
-export const PojectDescription = styled.p`
+export const PojectDescription = styled(motion.p)`
   font-size: ${fonts.s};
+  width: 80%;
 `;
 
 export const NextProjectArrow = styled.div`
@@ -82,11 +58,53 @@ export const NextProject = styled.div`
   }
 `;
 
-export const StyledImg = styled.img`
+export const StyledImg = styled(motion.img)`
   width: 90%;
-  margin: 10% 0 40px 10%;
+  margin: 40px 0 40px 10%;
   box-shadow: 2px 2px 10px 1px ${colors.gray};
   &:nth-of-type(2) {
     margin: 0 10% 0 0;
+  }
+`;
+
+export const InsideButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: ${colors.black};
+    height: 2px;
+    width: 20px;
+    transform: rotate(-45deg);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: ${colors.black};
+    height: 2px;
+    width: 20px;
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    transform: rotate(-90deg);
   }
 `;

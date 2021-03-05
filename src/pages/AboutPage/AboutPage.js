@@ -8,8 +8,7 @@ import {
   StyledRightSection,
   StyledTitle,
   StyledDescription,
-  StyledOrangeButton,
-  StyledBlackButton,
+  StyledButton,
 } from "../style";
 
 import { AboutMeTitle, AboutMeDescription } from "./style";
@@ -20,7 +19,6 @@ const AboutPage = () => {
       <StyledLeftSection
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        exit={{ y: -50, opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
         <StyledTitle>About me</StyledTitle>
@@ -28,15 +26,15 @@ const AboutPage = () => {
           A few words about me and my technologies what I use for building Apps{" "}
         </StyledDescription>
         <div>
-          <StyledOrangeButton as={Link} to={"/works"}>
+          <StyledButton as={Link} to={"/works"} primary="true">
             works
-          </StyledOrangeButton>
-          <StyledBlackButton
+          </StyledButton>
+          <StyledButton
             href={"https://www.facebook.com/mateusz.lengiewicz/"}
             target={"_blank"}
           >
             facebook
-          </StyledBlackButton>
+          </StyledButton>
         </div>
       </StyledLeftSection>
       <StyledRightSection>
@@ -55,7 +53,7 @@ const AboutPage = () => {
           I'm 18 years old developer who is passionated about what I do. I'm a
           student of the 3rd grade of electronic technical high school in
           Białystok. The process of self-developement based on the modern
-          technologies makes me satisfied.
+          technologies makes me satisfied and I love it.
         </AboutMeDescription>
         <AboutMeTitle
           initial={{ y: 50, opacity: 0 }}

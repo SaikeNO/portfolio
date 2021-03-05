@@ -22,3 +22,28 @@ export const ListItem = styled(motion.li)`
     color: ${colors.white};
   }
 `;
+export const StyledProjectWrapper = styled(motion.article)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  padding: 100px 50px;
+  background-color: ${colors.white};
+  z-index: 999;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+`;
+
+export const HiddenDiv = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: 999;
+`;

@@ -11,7 +11,7 @@ export const StyledNav = styled(motion.nav)`
   height: 100%;
   width: 100%;
   background-color: ${colors.white};
-  z-index: 998;
+  z-index: 997;
 `;
 
 export const StyledList = styled.ul`

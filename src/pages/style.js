@@ -34,14 +34,16 @@ export const StyledDescription = styled.p`
   color: ${colors.gray};
   margin-top: 20px;
 `;
-export const StyledOrangeButton = styled.a`
+export const StyledButton = styled.a`
   display: inline-block;
   text-align: center;
   margin: 20px 20px 20px 0;
-  border: 2px solid ${colors.orange};
+  border: 2px solid ${(props) => (props.primary ? colors.orange : "#000")};
+  background-color: ${(props) => (props.primary ? "transparent" : "#000")};
+  color: ${(props) => (props.primary ? colors.orange : colors.white)};
+  width: ${(props) => `${props.width}px`};
   border-radius: 20px;
   font-size: ${fonts.xs};
-  color: ${colors.orange};
   font-weight: bold;
   padding: 10px 20px;
   transition: 0.4s;
@@ -49,11 +51,4 @@ export const StyledOrangeButton = styled.a`
   &:hover {
     background-color: #000;
   }
-`;
-
-export const StyledBlackButton = styled(StyledOrangeButton)`
-  background-color: #000;
-  border: 2px solid #000;
-  color: ${(props) => props.color};
-  padding: ${(props) => props.padding};
 `;

@@ -13,10 +13,11 @@ import {
 
 import { StyledButton } from "../pages/style";
 
-import img1 from "../images/to_do_app1.png";
-import img2 from "../images/to_do_app2.png";
+import img1 from "../images/speedcars1.png";
+import img2 from "../images/speedcars2.png";
+import img3 from "../images/speedcars3.png";
 
-const FirstProject = ({ SetIdProject }) => {
+const FourthProject = ({ SetIdProject }) => {
   return (
     <>
       <ProjectTitle
@@ -24,25 +25,23 @@ const FirstProject = ({ SetIdProject }) => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
       >
-        To do App
+        Speedcars
       </ProjectTitle>
       <PojectDescription
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.2 }}
       >
-        Simple TO DO APP done with pure React. Building this app i learnt how to
-        use stateless functional component and react hooks. Data flow with props
-        isn't problem for me. Built this app taught me how to move in pure React
-        quite efficiently.
+        First web project made with HTML/CSS/JS some jQuery for smooth scrolling
+        and library lightbox for gallery of images.
       </PojectDescription>
-      <NextProject onClick={() => SetIdProject((prevId) => prevId + 1)}>
+      <NextProject onClick={() => SetIdProject(1)}>
         Next Project
         <NextProjectArrow />
       </NextProject>
       <StyledButton
         width={140}
-        href="https://saikeno.github.io/to-do-app/"
+        href="https://saikeno.github.io/Speedcars/"
         target="_blank"
       >
         <InsideButton>
@@ -51,7 +50,7 @@ const FirstProject = ({ SetIdProject }) => {
         </InsideButton>
       </StyledButton>
       <StyledButton
-        href="https://github.com/SaikeNO/to-do-app"
+        href="https://github.com/SaikeNO/Speedcars"
         target="_blank"
         width={150}
       >
@@ -72,9 +71,15 @@ const FirstProject = ({ SetIdProject }) => {
         transition={{ duration: 0.5, delay: 0.3 }}
         src={img2}
       />
+      <StyledImg
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        src={img3}
+      />
       <CloseButton onClick={() => SetIdProject(null)} />
     </>
   );
 };
 
-export default FirstProject;
+export default FourthProject;

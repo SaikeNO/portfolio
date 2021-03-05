@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
   height: 100px;
   padding: 0 50px;
   font-weight: bold;
-  z-index: 999;
+  z-index: 998;
 `;
 
 export const StyledButton = styled.button`
@@ -28,7 +28,6 @@ export const StyledButton = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: flex-end;

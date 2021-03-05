@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 import {
   StyledWrapper,
-  StyledOrangeButton,
-  StyledBlackButton,
+  StyledButton,
   StyledLeftSection,
   StyledTitle,
   StyledDescription,
@@ -37,16 +36,16 @@ const HomePage = () => {
           and effcient code
         </StyledDescription>
         <div>
-          <StyledOrangeButton as={Link} to={"/about"}>
+          <StyledButton as={Link} to={"/about"} primary="true">
             about me
-          </StyledOrangeButton>
-          <StyledBlackButton
+          </StyledButton>
+          <StyledButton
             target="_blank"
             rel="noreferrer"
             href="https://github.com/SaikeNO"
           >
             GitHub
-          </StyledBlackButton>
+          </StyledButton>
         </div>
       </StyledLeftSection>
       <StyledRightSection>
