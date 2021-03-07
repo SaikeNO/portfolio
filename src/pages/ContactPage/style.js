@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import { colors } from "../../styles/colors";
 import { fonts } from "../../styles/fonts";
+import { device } from "../../styles/device";
 
 export const StyledForm = styled(motion.form)`
   background-color: #000;
@@ -12,6 +13,9 @@ export const StyledForm = styled(motion.form)`
   justify-content: center;
   padding: 50px 50px 20px;
   border-radius: 30px;
+  @media ${device.mobileL} {
+    padding: 30px;
+  }
 `;
 
 export const StyledLabel = styled.label`

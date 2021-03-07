@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import { colors } from "../../styles/colors";
 import { fonts } from "../../styles/fonts";
+import { device } from "../../styles/device";
 
 export const StyledAside = styled.aside`
   position: fixed;
@@ -12,16 +13,19 @@ export const StyledAside = styled.aside`
   bottom: 0;
   width: 12vw;
   min-width: 150px;
+  font-size: ${fonts.m};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media ${device.laptopL} {
+    font-size: ${fonts.s};
+  }
 `;
 
 export const StyledLink = styled(motion(NavLink))`
   display: block;
   padding: 0.3em;
-  font-size: ${fonts.m};
   color: ${colors.gray};
   transition: 0.3s;
   &.active {
@@ -31,7 +35,6 @@ export const StyledLink = styled(motion(NavLink))`
 
 export const StyledPageCounter = styled.div`
   position: relative;
-  font-size: ${fonts.s};
   height: 50px;
   width: 100px;
   font-weight: bold;

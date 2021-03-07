@@ -75,9 +75,23 @@ const Form = () => {
       setIsValidate(true);
     }
   };
-
+  const formVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { duration: 1 },
+    },
+  };
   return (
-    <StyledForm noValidate onSubmit={handleSubmit}>
+    <StyledForm
+      variants={formVariants}
+      initial="hidden"
+      animate="visible"
+      noValidate
+      onSubmit={handleSubmit}
+    >
       <StyledWrapper>
         <StyledLabel htmlFor="name">Name</StyledLabel>
         <StyledInput

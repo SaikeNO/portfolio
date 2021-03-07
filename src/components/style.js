@@ -3,10 +3,15 @@ import { motion } from "framer-motion";
 
 import { colors } from "../styles/colors";
 import { fonts } from "../styles/fonts";
+import { device } from "../styles/device";
 
 export const ProjectTitle = styled(motion.h2)`
   font-size: ${fonts.xxl};
   color: ${colors.black};
+  @media ${device.mobileL} {
+    font-size: ${fonts.xl};
+    margin-bottom: 10px;
+  }
 `;
 
 export const PojectDescription = styled(motion.p)`
@@ -65,6 +70,10 @@ export const StyledImg = styled(motion.img)`
   &:nth-of-type(2) {
     margin: 0 10% 0 0;
   }
+  @media ${device.tablet} {
+    width: 100%;
+    margin: 20px 0 0 0 !important;
+  } ;
 `;
 
 export const InsideButton = styled.div`

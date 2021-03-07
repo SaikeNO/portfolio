@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 
 import { colors } from "../../styles/colors";
 import { fonts } from "../../styles/fonts";
+import { device } from "../../styles/device";
 
 export const ListItem = styled(motion.li)`
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
-  margin: 30px 0;
-  width: 550px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 550px;
   font-size: ${fonts.s};
   font-weight: bold;
   background-color: #000;
@@ -22,11 +24,20 @@ export const ListItem = styled(motion.li)`
     color: ${colors.white};
   }
 `;
+
+export const StyledList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const StyledProjectWrapper = styled(motion.article)`
   position: fixed;
   top: 0;
   left: 0;
   width: 60%;
+  min-width: 800px;
   height: 100%;
   padding: 100px 50px;
   background-color: ${colors.white};
@@ -37,6 +48,13 @@ export const StyledProjectWrapper = styled(motion.article)`
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
+  @media ${device.laptop} {
+    width: 100%;
+    min-width: auto;
+  }
+  @media ${device.tablet} {
+    padding: 50px 20px;
+  }
 `;
 
 export const HiddenDiv = styled.div`

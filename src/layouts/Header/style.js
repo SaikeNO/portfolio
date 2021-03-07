@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import { colors } from "../../styles/colors";
 import { fonts } from "../../styles/fonts";
+import { device } from "../../styles/device";
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -16,6 +17,9 @@ export const StyledHeader = styled.header`
   padding: 0 50px;
   font-weight: bold;
   z-index: 998;
+  @media ${device.mobileL} {
+    padding: 0 20px;
+  }
 `;
 
 export const StyledButton = styled.button`

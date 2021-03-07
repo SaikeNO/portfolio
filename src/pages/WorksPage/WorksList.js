@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ListItem } from "./style";
+import { ListItem, StyledList } from "./style";
 
 const projects = [
   { id: 1, name: "TO DO APP" },
@@ -22,7 +22,7 @@ const WorksList = ({ SetIdProject }) => {
       <span>{project.name}</span>
     </ListItem>
   ));
-  return <ul>{ListOfProjects}</ul>;
+  return <StyledList>{ListOfProjects}</StyledList>;
 };
 
 export default WorksList;
