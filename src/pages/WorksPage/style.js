@@ -43,7 +43,8 @@ export const HiddenDiv = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: 998;
+  backdrop-filter: blur(2px);
 `;

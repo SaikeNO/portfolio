@@ -40,12 +40,12 @@ export const StyledButton = styled.a`
   margin: 20px 20px 20px 0;
   border: 2px solid ${(props) => (props.primary ? colors.orange : "#000")};
   background-color: ${(props) => (props.primary ? "transparent" : "#000")};
+  padding: ${(props) => props.padding || "10px 20px"};
   color: ${(props) => (props.primary ? colors.orange : colors.white)};
-  width: ${(props) => `${props.width}px`};
+  width: ${(props) => props.width || "auto"};
+  font-size: ${(props) => props.fontSize || fonts.xs};
   border-radius: 20px;
-  font-size: ${fonts.xs};
   font-weight: bold;
-  padding: 10px 20px;
   transition: 0.4s;
   cursor: pointer;
   &:hover {

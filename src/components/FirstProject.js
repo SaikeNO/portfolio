@@ -41,7 +41,7 @@ const FirstProject = ({ SetIdProject }) => {
         <NextProjectArrow />
       </NextProject>
       <StyledButton
-        width={140}
+        width={"140px"}
         href="https://saikeno.github.io/to-do-app/"
         target="_blank"
       >
@@ -53,7 +53,7 @@ const FirstProject = ({ SetIdProject }) => {
       <StyledButton
         href="https://github.com/SaikeNO/to-do-app"
         target="_blank"
-        width={150}
+        width={"150px"}
       >
         <InsideButton>
           <AiFillGithub size="1.5em" style={{ marginRight: "8px" }} />

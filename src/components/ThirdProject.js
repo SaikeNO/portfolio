@@ -6,16 +6,16 @@ import {
   PojectDescription,
   NextProject,
   NextProjectArrow,
-  StyledImg,
+  // StyledImg,
   InsideButton,
   CloseButton,
 } from "./style";
 
 import { StyledButton } from "../pages/style";
 
-import img1 from "../images/applab1.png";
-import img2 from "../images/applab2.png";
-import img3 from "../images/applab3.png";
+// import img1 from "../images/applab1.png";
+// import img2 from "../images/applab2.png";
+// import img3 from "../images/applab3.png";
 
 const SecondProject = ({ SetIdProject }) => {
   return (
@@ -38,13 +38,13 @@ const SecondProject = ({ SetIdProject }) => {
         Next Project
         <NextProjectArrow />
       </NextProject>
-      <StyledButton width={140} href="" target="_blank">
+      <StyledButton width={"140px"} href="" target="_blank">
         <InsideButton>
           <AiOutlineShareAlt size="1.5em" style={{ marginRight: "8px" }} />
           live
         </InsideButton>
       </StyledButton>
-      <StyledButton href="" target="_blank" width={150}>
+      <StyledButton href="" target="_blank" width={"150px"}>
         <InsideButton>
           <AiFillGithub size="1.5em" style={{ marginRight: "8px" }} />
           source code
