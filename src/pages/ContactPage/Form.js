@@ -13,6 +13,8 @@ import {
   StyledConfirmation,
 } from "./style";
 
+import { formVariants } from "../../styles/variants";
+
 const Form = () => {
   const [nameValue, setNameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
@@ -75,20 +77,12 @@ const Form = () => {
       setIsValidate(true);
     }
   };
-  const formVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: { duration: 1 },
-    },
-  };
   return (
     <StyledForm
       variants={formVariants}
       initial="hidden"
       animate="visible"
+      exit="exit"
       noValidate
       onSubmit={handleSubmit}
     >

@@ -15,6 +15,11 @@ export const AboutMeDescription = styled(motion.p)`
   font-size: ${fonts.s};
 `;
 
+export const StyledList = styled(motion.ul)`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
 export const ListItem = styled(motion.li)`
   width: 50%;
   font-size: ${fonts.s};

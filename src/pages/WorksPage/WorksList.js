@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ListItem, StyledList } from "./style";
+import { itemVariants } from "../../styles/variants";
 
 const projects = [
   { id: 1, name: "TO DO APP" },
@@ -12,9 +13,7 @@ const projects = [
 const WorksList = ({ SetIdProject }) => {
   const ListOfProjects = projects.map((project, id) => (
     <ListItem
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: id * 0.3 }}
+      variants={itemVariants}
       key={project.id}
       onClick={() => SetIdProject(project.id)}
     >

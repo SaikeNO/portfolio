@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import AsideNaviItem from "./AsideNaviItem";
 
@@ -12,6 +12,23 @@ const dataNav = [
   { name: "-- works", path: "/works" },
   { name: "-- contact", path: "/contact" },
 ];
+
+const counterVariants = {
+  hidden: {
+    y: 20,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { delay: 0.4 },
+  },
+  exit: {
+    y: -20,
+    opacity: 0,
+    transition: { duration: 0.4 },
+  },
+};
 
 const AsideNavi = () => {
   const location = useLocation();
@@ -39,14 +56,17 @@ const AsideNavi = () => {
   return (
     <StyledAside>
       <StyledPageCounter>
-        <motion.span
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          {currentPage}
-        </motion.span>
+        <AnimatePresence>
+          <motion.span
+            variants={counterVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            {currentPage}
+          </motion.span>
+        </AnimatePresence>
+
         <span>/</span>
         <span>4</span>
       </StyledPageCounter>

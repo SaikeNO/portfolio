@@ -12,14 +12,16 @@ import {
 } from "../style";
 
 import { AboutMeTitle, AboutMeDescription } from "./style";
+import { variants, decriptionVariants } from "../../styles/variants";
 
 const AboutPage = () => {
   return (
     <StyledWrapper>
       <StyledLeftSection
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
       >
         <StyledTitle>About me</StyledTitle>
         <StyledDescription>
@@ -39,16 +41,18 @@ const AboutPage = () => {
       </StyledLeftSection>
       <StyledRightSection>
         <AboutMeTitle
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.2 }}
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
         >
           #About me
         </AboutMeTitle>
         <AboutMeDescription
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          variants={decriptionVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
         >
           I'm 18 years old developer who is passionated about what I do. I'm a
           student of the 3rd grade of electronic technical high school in
@@ -56,9 +60,10 @@ const AboutPage = () => {
           technologies makes me satisfied and I love it.
         </AboutMeDescription>
         <AboutMeTitle
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
         >
           #Tech Stack
         </AboutMeTitle>

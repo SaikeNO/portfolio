@@ -12,13 +12,16 @@ import {
   StyledButton,
 } from "../style";
 
+import { variants } from "../../styles/variants";
+
 const ContactPage = () => {
   return (
     <StyledWrapper>
       <StyledLeftSection
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
       >
         <StyledTitle>Contact</StyledTitle>
         <StyledDescription>

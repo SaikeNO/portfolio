@@ -7,7 +7,8 @@ import {
 } from "react-icons/fa";
 import { SiJavascript, SiStyledComponents, SiFramer } from "react-icons/si";
 
-import { ListItem } from "./style";
+import { ListItem, StyledList } from "./style";
+import { listVariants, itemVariants } from "../../styles/variants";
 
 const data = [
   { icon: FaHtml5, name: "HTML5" },
@@ -21,18 +22,22 @@ const data = [
 ];
 
 const list = data.map((item, id) => (
-  <ListItem
-    key={id}
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.5, delay: id * 0.3 }}
-  >
+  <ListItem key={id} variants={itemVariants}>
     <item.icon style={{ marginRight: "10px" }} size={"2em"} /> {item.name}
   </ListItem>
 ));
 
 const TechStack = () => {
-  return <ul style={{ display: "flex", flexWrap: "wrap" }}>{list}</ul>;
+  return (
+    <StyledList
+      variants={listVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      {list}
+    </StyledList>
+  );
 };
 
 export default TechStack;

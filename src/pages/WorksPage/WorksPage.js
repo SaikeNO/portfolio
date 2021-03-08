@@ -18,6 +18,8 @@ import {
   StyledRightSection,
 } from "../style";
 
+import { variants, listVariants } from "../../styles/variants";
+
 import { StyledProjectWrapper, HiddenDiv } from "./style";
 
 const WorksPage = () => {
@@ -42,9 +44,10 @@ const WorksPage = () => {
     <>
       <StyledWrapper>
         <StyledLeftSection
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
         >
           <StyledTitle>Works</StyledTitle>
           <StyledDescription>
@@ -64,7 +67,12 @@ const WorksPage = () => {
             </StyledButton>
           </div>
         </StyledLeftSection>
-        <StyledRightSection>
+        <StyledRightSection
+          variants={listVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+        >
           <WorksList SetIdProject={SetIdProject} />
         </StyledRightSection>
       </StyledWrapper>
