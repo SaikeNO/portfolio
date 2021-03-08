@@ -10,6 +10,26 @@ const dataNav = [
   { name: "contact", path: "/contact" },
 ];
 
+const navVariants = {
+  hidden: { x: "-100%" },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.6,
+      staggerChildren: 0.15,
+      when: "beforeChildren",
+    },
+  },
+  exit: {
+    x: "-100%",
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+      when: "afterChildren",
+    },
+  },
+};
+
 const BurgerNavigation = ({ handleToggleClick }) => {
   const menu = dataNav.map((item, index) => (
     <MenuItem
@@ -24,10 +44,10 @@ const BurgerNavigation = ({ handleToggleClick }) => {
 
   return (
     <StyledNav
-      initial={{ x: "-100%" }}
-      animate={{ x: 0 }}
-      exit={{ x: "-100%", transition: { delay: 0.8, duration: 0.5 } }}
-      transition={{ duration: 0.8 }}
+      variants={navVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
     >
       <StyledList>{menu}</StyledList>
     </StyledNav>

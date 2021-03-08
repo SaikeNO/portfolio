@@ -25,14 +25,16 @@ function App() {
   const handleToggleClick = () => setIsOpened((prevIsOpened) => !prevIsOpened);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <Header isOpened={isOpened} handleToggleClick={handleToggleClick} />
-      <Page />
-      {isMediaMatches && <AsideNavi />}
-      <AnimatePresence>
-        {isOpened && <BurgerNavi handleToggleClick={handleToggleClick} />}
-      </AnimatePresence>
-    </Router>
+    <AnimatePresence exitBeforeEnter>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Header isOpened={isOpened} handleToggleClick={handleToggleClick} />
+        <Page />
+        {isMediaMatches && <AsideNavi />}
+        <AnimatePresence>
+          {isOpened && <BurgerNavi handleToggleClick={handleToggleClick} />}
+        </AnimatePresence>
+      </Router>
+    </AnimatePresence>
   );
 }
 
