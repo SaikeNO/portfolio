@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.7d77e4dc.chunk.css",
-    "main.js": "/portfolio/static/js/main.53fe8af9.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.53fe8af9.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.4f33ee70.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.4f33ee70.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f943c2f3.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f943c2f3.js.map",
     "static/js/2.a96bcf28.chunk.js": "/portfolio/static/js/2.a96bcf28.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/applab1.01e5a989.png": "/portfolio/static/media/applab1.01e5a989.png",
     "static/media/applab2.b6a13276.png": "/portfolio/static/media/applab2.b6a13276.png",
     "static/media/applab3.3514168e.png": "/portfolio/static/media/applab3.3514168e.png",
-    "static/media/lengiewicz.b01d16c8.jpg": "/portfolio/static/media/lengiewicz.b01d16c8.jpg",
+    "static/media/lengiewicz.17e16c7f.jpg": "/portfolio/static/media/lengiewicz.17e16c7f.jpg",
     "static/media/speedcars1.7a83b2e0.png": "/portfolio/static/media/speedcars1.7a83b2e0.png",
     "static/media/speedcars2.2c20fec7.png": "/portfolio/static/media/speedcars2.2c20fec7.png",
     "static/media/speedcars3.694a48c9.png": "/portfolio/static/media/speedcars3.694a48c9.png",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.f943c2f3.js",
     "static/js/2.a96bcf28.chunk.js",
     "static/css/main.7d77e4dc.chunk.css",
-    "static/js/main.53fe8af9.chunk.js"
+    "static/js/main.4f33ee70.chunk.js"
   ]
 }
