@@ -19,11 +19,13 @@ const data = [
   { icon: SiStyledComponents, name: "Styled Components" },
   { icon: SiFramer, name: "Framer" },
   { icon: FaMobileAlt, name: "RWD" },
+  { icon: "", name: "BemCssModules" },
 ];
 
 const list = data.map((item, id) => (
   <ListItem key={id} variants={itemVariants}>
-    <item.icon style={{ marginRight: "10px" }} size={"2em"} /> {item.name}
+    {item?.icon && <item.icon style={{ marginRight: "10px" }} size={"2em"} />}{" "}
+    {item.name}
   </ListItem>
 ));
 
