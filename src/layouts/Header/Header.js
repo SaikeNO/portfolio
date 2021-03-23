@@ -10,7 +10,11 @@ const Header = ({ handleToggleClick, isOpened }) => {
           lengiewicz
         </LinkElement>
       </nav>
-      <StyledButton onClick={handleToggleClick} isOpened={isOpened}>
+      <StyledButton
+        aria-label={"open/close menu"}
+        onClick={handleToggleClick}
+        isOpened={isOpened}
+      >
         <StyledBurger />
         <StyledBurger />
         <StyledBurger />
