@@ -54,8 +54,8 @@ const AboutPage = () => {
           animate="visible"
           exit="exit"
         >
-          I'm 18 years old developer who is passionated about what I do. I'm a
-          student of the 3rd grade of electronic technical high school in
+          I'm 19 years old developer who is passionated about what I do. I'm a
+          student of the 4th grade of electronic technical high school in
           Białystok. The process of self-developement based on the modern
           technologies makes me satisfied and I love it.
         </AboutMeDescription>

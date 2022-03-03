@@ -6,8 +6,8 @@ import { itemVariants } from "../../styles/variants";
 const projects = [
   { id: 1, name: "TO DO APP" },
   { id: 2, name: "AppLab" },
-  { id: 3, name: "Weather App" },
-  { id: 4, name: "Speedcars" },
+  { id: 3, name: "Minesweeper" },
+  { id: 4, name: "EkoSolutions" },
 ];
 
 const WorksList = ({ SetIdProject }) => {

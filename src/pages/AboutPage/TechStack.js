@@ -4,6 +4,9 @@ import {
   FaSass,
   FaReact,
   FaMobileAlt,
+  FaAtom,
+  FaWordpressSimple,
+  FaFileAlt,
 } from "react-icons/fa";
 import { SiJavascript, SiStyledComponents, SiFramer } from "react-icons/si";
 
@@ -19,7 +22,9 @@ const data = [
   { icon: SiStyledComponents, name: "Styled Components" },
   { icon: SiFramer, name: "Framer" },
   { icon: FaMobileAlt, name: "RWD" },
-  { icon: "", name: "BemCssModules" },
+  { icon: FaAtom, name: "Atomic design" },
+  { icon: FaWordpressSimple, name: "Wordpress" },
+  { icon: FaFileAlt, name: "ACF" },
 ];
 
 const list = data.map((item, id) => (

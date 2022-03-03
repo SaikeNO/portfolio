@@ -13,9 +13,9 @@ import {
 
 import { StyledButton } from "../pages/style";
 
-import img1 from "../images/speedcars1.png";
-import img2 from "../images/speedcars2.png";
-import img3 from "../images/speedcars3.png";
+import img1 from "../images/eko.jpg";
+import img2 from "../images/eko2.jpg";
+import img3 from "../images/eko3.jpg";
 
 const FourthProject = ({ SetIdProject }) => {
   return (
@@ -32,8 +32,9 @@ const FourthProject = ({ SetIdProject }) => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, delay: 0.2 }}
       >
-        First web project made with HTML/CSS/JS some jQuery for smooth scrolling
-        and library lightbox for gallery of images.
+        My last commercial project. I used wordpress custom theme here with ACF.
+        I had to create customer panel where customers could download their
+        documents, make payments, and track their package.
       </PojectDescription>
       <NextProject onClick={() => SetIdProject(1)}>
         Next Project
@@ -41,7 +42,7 @@ const FourthProject = ({ SetIdProject }) => {
       </NextProject>
       <StyledButton
         width={"140px"}
-        href="https://saikeno.github.io/Speedcars/"
+        href="http://ekosolutions.klient.prograffing.com.pl/"
         target="_blank"
       >
         <InsideButton>
@@ -49,16 +50,7 @@ const FourthProject = ({ SetIdProject }) => {
           live
         </InsideButton>
       </StyledButton>
-      <StyledButton
-        href="https://github.com/SaikeNO/Speedcars"
-        target="_blank"
-        width={"150px"}
-      >
-        <InsideButton>
-          <AiFillGithub size="1.5em" style={{ marginRight: "8px" }} />
-          source code
-        </InsideButton>
-      </StyledButton>
+
       <StyledImg
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
