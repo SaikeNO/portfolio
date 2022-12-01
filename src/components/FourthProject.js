@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub, AiOutlineShareAlt } from "react-icons/ai";
+import { AiOutlineShareAlt } from "react-icons/ai";
 
 import {
   ProjectTitle,
@@ -13,9 +13,9 @@ import {
 
 import { StyledButton } from "../pages/style";
 
-import img1 from "../images/eko.jpg";
-import img2 from "../images/eko2.jpg";
-import img3 from "../images/eko3.jpg";
+import img1 from "../images/pzz.jpg";
+import img2 from "../images/pzz2.jpg";
+import img3 from "../images/pzz3.jpg";
 
 const FourthProject = ({ SetIdProject }) => {
   return (
@@ -25,7 +25,7 @@ const FourthProject = ({ SetIdProject }) => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
       >
-        Speedcars
+        PZZ Białystok
       </ProjectTitle>
       <PojectDescription
         initial={{ y: 50, opacity: 0 }}
@@ -33,8 +33,6 @@ const FourthProject = ({ SetIdProject }) => {
         transition={{ duration: 0.4, delay: 0.2 }}
       >
         My last commercial project. I used wordpress custom theme here with ACF.
-        I had to create customer panel where customers could download their
-        documents, make payments, and track their package.
       </PojectDescription>
       <NextProject onClick={() => SetIdProject(1)}>
         Next Project
@@ -42,7 +40,7 @@ const FourthProject = ({ SetIdProject }) => {
       </NextProject>
       <StyledButton
         width={"140px"}
-        href="http://ekosolutions.klient.prograffing.com.pl/"
+        href="https://pzz.bialystok.pl/"
         target="_blank"
       >
         <InsideButton>
